@@ -1,69 +1,59 @@
-//Mobileapp
 
-let t = {
-  tempo: 2,
-  distancia: 1
+// cinco ou mais, menor e gratis 
+
+function solucao(precos) {
+  let total = 0;
+  if (precos.length >= 5) {
+    precos.pop();
+    for ( let i = 0; i < precos.length; i++) {
+    total += precos[i];
+  } console.log(total)
+
+  } else {
+    for ( let i = 0; i < precos.length; i++) {
+    total += precos[i];
+  } console.log(total)
+  }
 }
+solucao([100, 500, 100])
 
-function solucao(tempo, distancia) {
-  let corrida = 0
-  if (tempo < 5) {
-    corrida = 600
-  } else if (5 < tempo && tempo < 60 ) {
-    corrida = (100 * tempo) + (50 * distancia)
-  } else if (tempo >= 60) {
-    if (distancia < 100) {
-      corrida = 200 * distancia
-    } else {
-      corrida = 150 * distancia
-    }
-  } console.log(corrida)
-}
+// so os tops
 
-solucao(25,8)
-
-//ano olimpico
-
-
-function solucao(ano) {
-  const resultado = ano % 4;
-  
-  if (ano % 4 == 2) {
-    console.log('COPA')
-  } else if (ano % 4 == 0) {
-    console.log('JOGOS')
-  } else if (ano % 4 == 1) {
-    console.log('MEH')
-  } 
-  
-}
-solucao(2019)
-
-// filtrar letras
-
-let lista = 
-[
+let produtos = [
   {
-    "letra": "m",
-    "palavras": [
-      "mamao",
-      "maca",
-      "melao",
-      "melancia",
-      "laranja"
-    ]
+    "nome": "Camiseta",
+    "preco": 7000
+  },
+  {
+    "nome": "Tenis",
+    "preco": 8000
+  },
+  {
+    "nome": "Relogio",
+    "preco": 15000
   }
 ]
 
 
-function solucao(letra, palavras) {
-  let contador = 0;
-
-  for (let item of palavras) {
-    if (item[0] != letra ) {
-      contador ++;
-  } else {
-    continue
-    }
-} console.log(contador)
+function solucao(produtos) {
+  let totalTop = [];
+  let percentual = 0;
+  let total = 0;
+  if (produtos.preco >= 10000) {
+    for ( let i = 0; i < produtos.preco; i++) {
+    totalTop.push(precos[i]);
+    console.log(totalTop);
+    } 
+} else {
+  for ( let i = 0; i < produtos.preco; i++) {
+    total.push(precos[i]);
+    console.log(total);
 }
+}
+       
+}
+
+
+
+
+
