@@ -85,8 +85,7 @@ function solucao(obj) {
       }
 } 
 
-
-
-
-
 solucao(obj)
+
+//Mobileapp
+
